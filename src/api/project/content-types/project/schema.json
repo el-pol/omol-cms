@@ -50,9 +50,7 @@
       "type": "media",
       "multiple": false,
       "required": true,
-      "allowedTypes": [
-        "images"
-      ],
+      "allowedTypes": ["images"],
       "pluginOptions": {
         "i18n": {
           "localized": false
@@ -63,9 +61,7 @@
       "type": "media",
       "multiple": false,
       "required": true,
-      "allowedTypes": [
-        "images"
-      ],
+      "allowedTypes": ["images"],
       "pluginOptions": {
         "i18n": {
           "localized": false
@@ -75,10 +71,18 @@
     "video": {
       "type": "media",
       "multiple": false,
-      "required": true,
-      "allowedTypes": [
-        "videos"
-      ],
+      "required": false,
+      "allowedTypes": ["videos"],
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "vimeoUrl": {
+      "type": "string",
+      "required": false,
+      "regex": "^https?:\\/\\/(?:www\\.)?(?:player\\.)?vimeo\\.com\\/(?:video\\/)?(?:channels\\/[^\\/]+\\/|groups\\/[^\\/]+\\/videos\\/|ondemand\\/[^\\/]+\\/)?\\d+(?:$|[?#])",
       "pluginOptions": {
         "i18n": {
           "localized": false
@@ -92,9 +96,7 @@
       "inversedBy": "projects"
     },
     "bts": {
-      "allowedTypes": [
-        "images"
-      ],
+      "allowedTypes": ["images"],
       "type": "media",
       "multiple": true,
       "pluginOptions": {
