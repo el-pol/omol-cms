@@ -2,7 +2,7 @@
 
 const { ValidationError } = require("@strapi/utils").errors;
 
-/**ly
+/**
  * @typedef {{
  *   video?: unknown,
  *   vimeoUrl?: unknown,
